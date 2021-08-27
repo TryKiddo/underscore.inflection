@@ -13,7 +13,6 @@ gulp.task('jscs', function() {
 gulp.task('jscov', function() {
   return gulp.src('lib/*.js')
     .pipe(jscov('index.js'))
-    .pipe(gulp.dest('./lib-cov'));
 });
 
 gulp.task('contribs', function() {
